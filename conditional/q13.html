@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 13: Greatest of Three Numbers</title>
+</head>
+<body>
+  <h1>Program 13: Find Greatest of Three Numbers</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int a,b,c;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a,&b,&c);
+    if(a&gt;b && a&gt;c)
+        printf("Greatest: %d", a);
+    else if(b&gt;c)
+        printf("Greatest: %d", b);
+    else
+        printf("Greatest: %d", c);
+}</code></pre>
+ <button onclick="window.location.href='conditional_programs.html'">⬅ Back to Conditional Programs</button></body>
+</html>

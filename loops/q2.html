@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2. Check Divisibility by Prime</title>
+</head>
+<body>
+  <h1>Q2. Check Divisibility by Prime</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int num, prime, got = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for (int i = 2; i <= num / 2; i++) {
+        prime = 1;
+        for (int j = 2; j <= i / 2; j++) {
+            if (i % j == 0) { prime = 0; break; }
+        }
+        if (prime && num % i == 0) { got = 1; break; }
+    }
+    if (got)
+        printf("The number %d is divisible by a prime number\n", num);
+    else
+        printf("The number %d is not divisible by a prime number\n", num);
+}</code></pre>
+
+  <button onclick="window.location.href='ics.html'">⬅ Back to Interactive Control Structure</button>
+</body>
+</html>

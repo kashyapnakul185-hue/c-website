@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q4 - Title Case</title>
+</head>
+<body>
+
+<h1>Q4 - Convert String to Title Case</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[50];
+    int i;
+    printf("Enter any sentence you like: ");
+    fgets(str, sizeof(str), stdin);
+    if(str[0] &gt;= 'a' &amp;&amp; str[0] &lt;= 'z') str[0] -= 32;
+    for(i = 1; str[i]; i++){
+        if((str[i-1]==' ' || str[i-1]=='.') &amp;&amp; str[i] &gt;= 'a' &amp;&amp; str[i] &lt;= 'z'){
+            str[i] -= 32;
+        }
+    }
+    printf("Title Case: %s", str);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

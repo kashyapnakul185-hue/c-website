@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Interest</title>
+</head>
+<body>
+<h1>Simple Interest</h1>
+<pre>
+// op12_simple_interest.h
+#include &lt;stdio.h&gt;
+void main() {
+    float P, R, T, SI;
+    printf("Enter Principal, Rate, Time: ");
+    scanf("%f %f %f",&P,&R,&T);
+    SI = (P*R*T)/100;
+    printf("Simple Interest: %.2f", SI);
+}
+</pre>
+<button id="backBtn" onclick="window.location.href='operators.html'">← Back</button>
+</body>
+</html>

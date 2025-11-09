@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q5 - Toggle Case</title>
+</head>
+<body>
+
+<h1>Q5 - Toggle Case</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[50];
+    int i,l;
+    printf("Enter any sentence you like: ");
+    fgets(str, sizeof(str), stdin);
+    l = strlen(str);
+    for(i = 0; i &lt; l; i++){
+        if(str[i] &gt;= 'A' &amp;&amp; str[i] &lt;= 'Z') str[i] += 32;
+        else if(str[i] &gt;= 'a' &amp;&amp; str[i] &lt;= 'z') str[i] -= 32;
+    }
+    printf("Toggled string: %s", str);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

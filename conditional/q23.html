@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 23: Simple Calculator Using Switch</title>
+</head>
+<body>
+  <h1>Program 23 – Simple Calculator Using Switch Case</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    char op;
+    float a,b;
+    printf("Enter operator (+, -, *, /): ");
+    scanf(" %c",&op);
+    printf("Enter two numbers: ");
+    scanf("%f %f",&a,&b);
+    switch(op){
+        case '+': printf("Result = %.2f",a+b); break;
+        case '-': printf("Result = %.2f",a-b); break;
+        case '*': printf("Result = %.2f",a*b); break;
+        case '/': 
+            if(b!=0)
+                printf("Result = %.2f",a/b);
+            else
+                printf("Division by zero not allowed");
+            break;
+        default: printf("Invalid operator");
+    }
+}</code></pre>
+ <button onclick="window.location.href='conditional_programs.html'">⬅ Back to Conditional Programs</button>
+</body>
+</html>

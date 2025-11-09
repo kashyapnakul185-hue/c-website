@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q10 - Character at Index</title>
+</head>
+<body>
+
+<h1>Q10 - Character at Index</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[50];
+    int index;
+    printf("Enter string: ");
+    fgets(str, sizeof(str), stdin);
+    printf("Enter index: ");
+    scanf("%d", &index);
+    if(index &lt; 0) printf("Enter number &gt;= 0 only");
+    else if(index &lt; strlen(str)-1) printf("Character: %c", str[index]);
+    else printf("Out of bound");
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

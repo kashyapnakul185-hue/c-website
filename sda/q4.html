@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Reverse Copy</title>
+</head>
+<body>
+    <h1>Q4 - Copy Array in Reverse Order</h1>
+    <pre>
+// Q4: Copy array into another array in reverse order
+#include &lt;stdio.h&gt;
+
+void main() {
+    int array1[5], array2[5], i;
+    printf("Enter 5 elements for array1: ");
+    for (i = 0; i &lt; 5; i++) scanf("%d", &array1[i]);
+    for (i = 0; i &lt; 5; i++) array2[i] = array1[4 - i];
+    printf("Reversed array2: ");
+    for (i = 0; i &lt; 5; i++) printf("%d ", array2[i]);
+    printf("\n");
+}
+    </pre>
+    <a href="sda.html" class="back-button">Back</a>
+</body>
+</html>

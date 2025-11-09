@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 3: Count Digits</title>
+</head>
+<body>
+  <h1>Program 3: Count Number of Digits</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if(num >= 0 && num < 10)
+        printf("1 digit");
+    else if(num >= 10 && num < 100)
+        printf("2 digits");
+    else if(num >= 100 && num < 1000)
+        printf("3 digits");
+    else if(num >= 1000 && num < 10000)
+        printf("4 digits");
+    else if(num >= 10000 && num < 100000)
+        printf("5 digits");
+    else
+        printf("More than 5 digits");
+}</code></pre>
+ <button onclick="window.location.href='conditional_programs.html'">⬅ Back to Conditional Programs</button></body>
+</html>

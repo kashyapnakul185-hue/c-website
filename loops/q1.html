@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1. Binary of a Number</title>
+</head>
+<body>
+  <h1>Q1. Binary of a Number</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int num, rem, arr[16], x = 0, i;
+    printf("Enter the number to find its binary: ");
+    scanf("%d", &num);
+    while (num != 0) {
+        rem = num % 2;
+        arr[x++] = rem;
+        num /= 2;
+    }
+    printf("Binary: ");
+    for (i = x - 1; i >= 0; i--) {
+        printf("%d", arr[i]);
+    }
+    printf("\n");
+}</code></pre>
+
+  <button onclick="window.location.href='ics.html'">⬅ Back to Interactive Control Structure</button>
+</body>
+</html>

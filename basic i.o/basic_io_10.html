@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Program 10 - Password Masking</title>
+</head>
+<body><h2>Program 10 – Password Masking with *</h2><pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main() {
+    char password[20];
+    int i = 0;
+    char ch;
+
+    printf("Enter password: ");
+
+    while(1) {
+        ch = getch();
+        if(ch == 13) { // Enter key ASCII = 13
+            break;
+        }
+        password[i] = ch;
+        i++;
+        printf("*");
+    }
+    password[i] = '\\0';
+    printf("\\nYour password is: %s\\n", password);
+}
+</pre>
+<button onclick="window.location.href='basic_io.html'">⬅ Back</button>
+</body></html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q2 - Lowercase</title>
+</head>
+<body>
+
+<h1>Q2 - Convert String to Lowercase</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[50];
+    int i;
+    printf("Enter any sentence you like: ");
+    fgets(str, sizeof(str), stdin);
+    for(i = 0; str[i]; i++){
+        if(str[i] &gt;= 'A' && str[i] &lt;= 'Z'){
+            str[i] = str[i] + 32;
+        }
+    }
+    printf("Lowercase version: %s", str);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

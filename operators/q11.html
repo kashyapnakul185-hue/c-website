@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Average Marks</title>
+</head>
+<body>
+<h1>Average Marks</h1>
+<pre>
+// op11_average_marks.h
+#include &lt;stdio.h&gt;
+void main() {
+    int n, i, marks, sum=0;
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+    for(i=1;i<=n;i++){
+        printf("Enter marks of student %d: ", i);
+        scanf("%d",&marks);
+        sum += marks;
+    }
+    printf("Average marks: %.2f", (float)sum/n);
+}
+</pre>
+<button id="backBtn" onclick="window.location.href='operators.html'">← Back</button>
+</body>
+</html>

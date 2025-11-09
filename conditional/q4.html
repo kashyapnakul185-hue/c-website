@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 4: Grade System</title>
+</head>
+<body>
+  <h1>Program 4: Grade System Based on Marks</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int marks;
+    printf("Enter marks: ");
+    scanf("%d", &marks);
+    if(marks >= 0 && marks < 40)
+        printf("Fail");
+    else if(marks >= 40 && marks < 60)
+        printf("C Grade");
+    else if(marks >= 60 && marks < 80)
+        printf("B Grade");
+    else if(marks >= 80 && marks <= 100)
+        printf("A Grade");
+    else
+        printf("Invalid Marks");
+}</code></pre>
+ <button onclick="window.location.href='conditional_programs.html'">⬅ Back to Conditional Programs</button></body>
+</html>

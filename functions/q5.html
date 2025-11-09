@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q5 - Power of a Number</title>
+</head>
+<body>
+<h1>Q5 - Power of a Number</h1>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+int power5(int n, int p) {
+int x = 1, i;
+for (i = 0; i &lt; p; i++)
+x *= n;
+return x;
+}
+
+void main() {
+int n, p, res;
+clrscr();
+printf("Enter base: ");
+scanf("%d", &n);
+printf("Enter exponent: ");
+scanf("%d", &p);
+res = power5(n, p);
+printf("Result = %d\\n", res);
+}</code></pre>
+  <button onclick="window.location.href='functions.html'">⬅ Back to Functions</button>
+</body>
+</html>

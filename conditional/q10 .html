@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 10: Character Type Checker</title>
+</head>
+<body>
+  <h1>Program 10: Check Character Type (Alphabet, Digit or Special Symbol)</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf(" %c",&ch);
+    if((ch&gt;='a'&&ch&lt;='z')||(ch&gt;='A'&&ch&lt;='Z'))
+        printf("Alphabet");
+    else if(ch&gt;='0'&&ch&lt;='9')
+        printf("Digit");
+    else
+        printf("Special symbol");
+}</code></pre>
+ <button onclick="window.location.href='conditional_programs.html'">⬅ Back to Conditional Programs</button></body>
+</html>

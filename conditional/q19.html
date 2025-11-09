@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 19: Character Type Check</title>
+</head>
+<body>
+  <h1>Program 19: Check Character Type</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+    if(ch&gt;='A' && ch&lt;='Z')
+        printf("Uppercase");
+    else if(ch&gt;='a' && ch&lt;='z')
+        printf("Lowercase");
+    else if(ch&gt;='0' && ch&lt;='9')
+        printf("Number");
+    else
+        printf("Special character");
+}</code></pre>
+ <button onclick="window.location.href='conditional_programs.html'">⬅ Back to Conditional Programs</button></body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q18 - First Occurrence</title>
+</head>
+<body>
+
+<h1>Q18 - First Occurrence of Character</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[100], ch;
+    int i, flag=0;
+    printf("Enter string: ");
+    fgets(str, sizeof(str), stdin);
+    printf("Enter character to search: ");
+    scanf("%c", &amp;ch);
+    for(i=0; str[i]!='\0'; i++){
+        if(str[i]==ch){
+            printf("Character found at index %d", i);
+            flag=1;
+            break;
+        }
+    }
+    if(flag==0) printf("Character not found");
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

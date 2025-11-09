@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q4. Print Digits Separately</title>
+</head>
+<body>
+  <h1>Q4. Print Digits Separately</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while (num != 0) {
+        printf("%d\n", num % 10);
+        num /= 10;
+    }
+}</code></pre>
+
+  <button onclick="window.location.href='ics.html'">⬅ Back to Interactive Control Structure</button>
+</body>
+</html>

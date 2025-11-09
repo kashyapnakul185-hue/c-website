@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Program 3: Matrix Addition</title>
+</head>
+<body>
+<h1>Program 3: Matrix Addition</h1>
+<pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int a[2][2], b[2][2], sum[2][2], i, j;
+    printf("Enter 4 numbers for first matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;a[i][j]);
+    printf("Enter 4 numbers for second matrix: ");
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            scanf("%d",&amp;b[i][j]);
+    for(i=0;i&lt;2;i++)
+        for(j=0;j&lt;2;j++)
+            sum[i][j] = a[i][j] + b[i][j];
+    printf("Sum Matrix:\\n");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++)
+            printf("%d\\t", sum[i][j]);
+        printf("\\n");
+    }
+}</code></pre>
+  <button onclick="window.location.href='mda.html'">⬅ Back to Programs</button>
+</body></html>

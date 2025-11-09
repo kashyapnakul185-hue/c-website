@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Operations Using Functions</title>
+</head>
+<body>
+  <h1>Program 1: Multiple Operations Using Functions</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+int input1() {
+    int x;
+    printf("Enter the number: ");
+    scanf("%d", &x);
+    return x;
+}
+
+void output1(int r) {
+    printf("%d", r);
+}
+
+void add1() {
+    int x, y, z;
+    x = input1();
+    y = input1();
+    z = x + y;
+    output1(z);
+}
+
+void sub1() {
+    int x, y, z;
+    x = input1();
+    y = input1();
+    z = x - y;
+    output1(z);
+}
+
+void main() {
+    clrscr();
+    printf("Addition\\n");
+    add1();
+    printf("\\nSubtraction\\n");
+    sub1();
+    getch();
+}</code></pre>
+
+  <button onclick="window.location.href='functions.html'">⬅ Back to Functions</button>
+</body>
+</html>

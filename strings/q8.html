@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q8 - Concatenate Strings</title>
+</head>
+<body>
+
+<h1>Q8 - Concatenate Strings</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str1[50], str2[50];
+    printf("Enter string1: ");
+    fgets(str1, sizeof(str1), stdin);
+    printf("Enter string2: ");
+    fgets(str2, sizeof(str2), stdin);
+    strcat(str1, str2);
+    printf("Concatenated string: %s", str1);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

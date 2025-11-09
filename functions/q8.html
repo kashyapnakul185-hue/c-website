@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q8 - Swap using Call by Function</title>
+</head>
+<body>
+<h1>Q8 - Swap using Call by Function</h1>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void swap_function8(int a, int b, int *x, int *y) {
+int temp = a;
+a = b;
+b = temp;
+*x = a;
+*y = b;
+}
+
+void main() {
+int a = 15, b = 25;
+printf("Before swapping: a=%d, b=%d\\n", a, b);
+swap_function8(a, b, &a, &b);
+printf("After swapping: a=%d, b=%d\\n", a, b);
+}</code></pre>
+  <button onclick="window.location.href='functions.html'">⬅ Back to Functions</button>
+</body>
+</html>

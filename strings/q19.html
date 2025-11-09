@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q19 - Uppercase and Lowercase Count</title>
+</head>
+<body>
+
+<h1>Q19 - Count Uppercase and Lowercase</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[100];
+    int i, upper=0, lower=0;
+    printf("Enter string: ");
+    fgets(str, sizeof(str), stdin);
+    for(i=0; str[i]!='\0'; i++){
+        if(str[i]&gt;='A' &amp;&amp; str[i]&lt;='Z') upper++;
+        else if(str[i]&gt;='a' &amp;&amp; str[i]&lt;='z') lower++;
+    }
+    printf("Uppercase: %d\nLowercase: %d", upper, lower);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

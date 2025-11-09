@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q7 - Cube of a Number</title>
+</head>
+<body>
+<h1>Q7 - Cube of a Number</h1>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+int cube7(int n) {
+int x = 1, i;
+for (i = 0; i &lt; 3; i++)
+x *= n;
+return x;
+}
+
+void main() {
+int n, res;
+clrscr();
+printf("Enter number: ");
+scanf("%d", &n);
+res = cube7(n);
+printf("Cube = %d\\n", res);
+}</code></pre>
+  <button onclick="window.location.href='functions.html'">⬅ Back to Functions</button>
+</body>
+</html>

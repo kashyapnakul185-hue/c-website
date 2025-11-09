@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q20 - Replace Vowels</title>
+</head>
+<body>
+
+<h1>Q20 - Replace Vowels</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[100];
+    int i;
+    printf("Enter string: ");
+    fgets(str, sizeof(str), stdin);
+    for(i=0; str[i]!='\0'; i++){
+        if(strchr("AEIOUaeiou", str[i])) str[i]='*';
+    }
+    printf("String after replacement: %s", str);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

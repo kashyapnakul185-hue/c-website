@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q14 - Word Count</title>
+</head>
+<body>
+
+<h1>Q14 - Word Count</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str[100];
+    int i, words=1;
+    printf("Enter string: ");
+    fgets(str, sizeof(str), stdin);
+    for(i=0; str[i]!='\0'; i++){
+        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t') words++;
+    }
+    printf("Total words: %d", words);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3. Check Prime Number</title>
+</head>
+<body>
+  <h1>Q3. Check Prime Number</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int num, flag = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num <= 1) flag = 0;
+    for (int i = 2; i <= num / 2 && flag; i++) {
+        if (num % i == 0) flag = 0;
+    }
+    if (flag)
+        printf("%d is a Prime number\n", num);
+    else
+        printf("%d is not a Prime number\n", num);
+}</code></pre>
+
+  <button onclick="window.location.href='ics.html'">⬅ Back to Interactive Control Structure</button>
+</body>
+</html>

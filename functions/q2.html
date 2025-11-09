@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q2 - Total of 10 Numbers</title>
+</head>
+<body>
+<h1>Q2 - Total of 10 Numbers</h1>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+int num2() {
+int x;
+scanf("%d", &x);
+return x;
+}
+
+void main() {
+int i, nums[10];
+clrscr();
+for (i = 0; i &lt;= 9; i++) {
+printf("Enter number %d: ", i + 1);
+nums[i] = num2();
+}
+int sum = 0;
+for (i = 0; i &lt;= 9; i++) {
+sum += nums[i];
+}
+printf("\\nTotal of 10 numbers = %d\\n", sum);
+}</code></pre>
+  <button onclick="window.location.href='functions.html'">⬅ Back to Functions</button>
+</body>
+</html>

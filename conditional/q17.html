@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 17: Greatest of Three Numbers (Ternary Operator)</title>
+</head>
+<body>
+  <h1>Program 17: Greatest of Three Numbers (Using Ternary Operator)</h1>
+  <pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int a,b,c,max;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a,&b,&c);
+    max = (a&gt;b) ? ((a&gt;c)?a:c) : ((b&gt;c)?b:c);
+    printf("Greatest: %d", max);
+}</code></pre>
+ <button onclick="window.location.href='conditional_programs.html'">⬅ Back to Conditional Programs</button></body>
+</html>

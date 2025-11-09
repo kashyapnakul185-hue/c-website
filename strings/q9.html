@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q9 - Copy String</title>
+</head>
+<body>
+
+<h1>Q9 - Copy String</h1>
+
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str1[50], str2[50];
+    printf("Enter string1: ");
+    fgets(str1, sizeof(str1), stdin);
+    strcpy(str2, str1);
+    printf("Copied string2: %s", str2);
+    return 0;
+}
+</pre>
+
+<a href="string.html" class="button">Back to Strings</a>
+
+</body>
+</html>

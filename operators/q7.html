@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Right-hand Side Decimal</title>
+</head>
+<body>
+<h1>Right-hand Side Decimal</h1>
+<pre>
+// op7_rhs_decimal.h
+#include &lt;stdio.h&gt;
+void main() {
+    float num;
+    int rhs;
+    printf("Enter a decimal number: ");
+    scanf("%f", &num);
+    rhs = (num - (int)num) * 100000; // up to 5 decimal places
+    printf("Right-hand side: %d", rhs);
+}
+</pre>
+<button id="backBtn" onclick="window.location.href='operators.html'">← Back</button>
+</body>
+</html>

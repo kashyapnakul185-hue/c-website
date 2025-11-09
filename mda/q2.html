@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Program 2: Matrix Transpose</title>
+</head>
+<body>
+<h1>Program 2: Matrix Transpose</h1>
+<pre><code>#include &lt;stdio.h&gt;
+void main() {
+    int mat[2][2], trans[2][2], i, j;
+    printf("Enter 4 numbers for 2x2 matrix: ");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++){
+            scanf("%d",&amp;mat[i][j]);
+            trans[j][i] = mat[i][j];
+        }
+    }
+    printf("Transpose Matrix:\\n");
+    for(i=0;i&lt;2;i++){
+        for(j=0;j&lt;2;j++){
+            printf("%d\\t", trans[i][j]);
+        }
+        printf("\\n");
+    }
+}</code></pre>
+  <button onclick="window.location.href='mda.html'">⬅ Back to Programs</button>
+</body></html>
